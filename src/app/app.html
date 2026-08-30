@@ -1,9 +1,7 @@
-
-
+<app-navbar></app-navbar>
 
 @for( course of courses ; track course.id ){
-<app-course-card [course] = "course" (viewDetails) = " onViewCourseDetails($event)">
+<app-course-card [course]="course" (viewDetails)=" onViewCourseDetails($event)">
 
 </app-course-card>
 }
-
