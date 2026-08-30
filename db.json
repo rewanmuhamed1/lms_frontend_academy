@@ -1,0 +1,434 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@edulms.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Alex Johnson",
+      "email": "student@edulms.com",
+      "password": "student123",
+      "role": "student"
+    },
+    {
+      "id": 3,
+      "name": "Sarah Miller",
+      "email": "sarah@edulms.com",
+      "password": "sarah123",
+      "role": "student"
+    },
+    {
+      "id": 4,
+      "name": "Omar Hassan",
+      "email": "omar@edulms.com",
+      "password": "omar123",
+      "role": "student"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Modern Angular: The Complete Guide",
+      "description": "Master Angular from scratch with Standalone Components, Modern Control Flow (@if, @for), Signals, and Reactive Forms.",
+      "instructor": "Maximilian Schwarz",
+      "category": "Angular",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=80",
+      "level": "Beginner",
+      "duration": 24,
+      "studentsCount": 1241,
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "title": "Advanced Angular Architecture & Signals",
+      "description": "Deep dive into production-grade enterprise architecture, reactive state with Signals, and performance optimization.",
+      "instructor": "John Papa",
+      "category": "Angular",
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+      "level": "Advanced",
+      "duration": 18,
+      "studentsCount": 820,
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "title": "TypeScript from Zero to Hero",
+      "description": "Learn strong typing, interfaces, generics, decorators, and modern TypeScript toolchains for clean scalable code.",
+      "instructor": "Deborah Kurata",
+      "category": "TypeScript",
+      "price": 350,
+      "image": "https://images.unsplash.com/photo-1516116211227-bbc13c32ffc5?w=800&auto=format&fit=crop&q=80",
+      "level": "Beginner",
+      "duration": 12,
+      "studentsCount": 950,
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "title": "Modern JavaScript Mastery & ESNext",
+      "description": "Become proficient in modern JavaScript, closures, asynchronous programming, modules, and modern web APIs.",
+      "instructor": "Brad Traversy",
+      "category": "JavaScript",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800&auto=format&fit=crop&q=80",
+      "level": "Intermediate",
+      "duration": 16,
+      "studentsCount": 1500,
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "title": "JavaScript Fundamentals for Beginners",
+      "description": "Start your coding journey with core programming foundations, variables, functions, DOM manipulation, and problem-solving.",
+      "instructor": "Brad Traversy",
+      "category": "JavaScript",
+      "price": 0,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
+      "level": "Beginner",
+      "duration": 8,
+      "studentsCount": 3200,
+      "rating": 4.2
+    },
+    {
+      "id": 6,
+      "title": "Responsive Web Design with HTML5 & Tailwind CSS",
+      "description": "Build high-converting, mobile-friendly web pages with semantic HTML5 and utility-first Tailwind CSS design principles.",
+      "instructor": "Kevin Powell",
+      "category": "HTML & CSS",
+      "price": 0,
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80",
+      "level": "Beginner",
+      "duration": 10,
+      "studentsCount": 2100,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "title": "Java Programming Masterclass",
+      "description": "Comprehensive guide to Java 21, object-oriented programming, Collections framework, Lambdas, Streams, and Multithreading.",
+      "instructor": "Tim Buchalka",
+      "category": "Java",
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=80",
+      "level": "Intermediate",
+      "duration": 32,
+      "studentsCount": 1800,
+      "rating": 4.7
+    },
+    {
+      "id": 8,
+      "title": "Full-Stack Enterprise Apps with Spring Boot & Angular",
+      "description": "Build real-world full-stack systems with Spring Boot REST microservices, JPA/Hibernate, and an Angular client frontend.",
+      "instructor": "Chad Darby",
+      "category": "Spring Boot",
+      "price": 1500,
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=80",
+      "level": "Advanced",
+      "duration": 28,
+      "studentsCount": 640,
+      "rating": 5
+    },
+    {
+      "title": "Angular Deep Dive - Beginner to Advanced (Angular 22)",
+      "description": "Angular Deep Dive - Beginner to Advanced (Angular 22) Angular Deep Dive - Beginner to Advanced (Angular 22)",
+      "instructor": "Angular University",
+      "category": "Angular",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=80",
+      "level": "Beginner",
+      "duration": 12,
+      "studentsCount": 1,
+      "rating": 5,
+      "id": 9
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "title": "Introduction to Angular & Project Architecture",
+      "description": "Understand the Angular component hierarchy, standalone bootstrap structure, and project tooling.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 20,
+      "order": 1
+    },
+    {
+      "id": 2,
+      "courseId": 1,
+      "title": "Standalone Components, Inputs & Outputs",
+      "description": "Learn how to build modular, decoupled components with @Input and @Output event emitters.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 35,
+      "order": 2
+    },
+    {
+      "id": 3,
+      "courseId": 1,
+      "title": "Modern Control Flow: @if, @else, @for & @empty",
+      "description": "Master declarative template syntax in modern Angular without traditional structural directives.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 28,
+      "order": 3
+    },
+    {
+      "id": 4,
+      "courseId": 1,
+      "title": "Services, Dependency Injection & HttpClient",
+      "description": "Create injectable singleton services and perform RESTful HTTP operations with HttpClient.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 40,
+      "order": 4
+    },
+    {
+      "id": 5,
+      "courseId": 2,
+      "title": "Signals Fundamentals & Reactive Primitives",
+      "description": "Explore WritableSignal, computed, and effect for granular, zone-less reactivity.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 30,
+      "order": 1
+    },
+    {
+      "id": 6,
+      "courseId": 2,
+      "title": "Enterprise State Management Architecture",
+      "description": "Structuring clean feature state patterns with Angular services and signals.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 45,
+      "order": 2
+    },
+    {
+      "id": 7,
+      "courseId": 2,
+      "title": "Performance Optimization & Lazy Loading",
+      "description": "Route lazy loading, deferrable views with @defer, and bundle analysis.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 35,
+      "order": 3
+    },
+    {
+      "id": 8,
+      "courseId": 3,
+      "title": "TypeScript Types, Unions & Interfaces",
+      "description": "Declaring strict TypeScript types, custom type aliases, and object contract interfaces.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 25,
+      "order": 1
+    },
+    {
+      "id": 9,
+      "courseId": 3,
+      "title": "Generics and Advanced Type Utilities",
+      "description": "Writing reusable generic functions, generic constraints, and built-in type helpers.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 32,
+      "order": 2
+    },
+    {
+      "id": 10,
+      "courseId": 3,
+      "title": "TypeScript Modules & Compilation Config",
+      "description": "Configuring tsconfig.json compiler flags for modern ES modules and strict mode.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 20,
+      "order": 3
+    },
+    {
+      "id": 11,
+      "courseId": 4,
+      "title": "ES6+ Modern Syntax & Destructuring",
+      "description": "Arrow functions, spread/rest operators, template literals, and object shorthand.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 22,
+      "order": 1
+    },
+    {
+      "id": 12,
+      "courseId": 4,
+      "title": "Asynchronous JavaScript: Promises & Async/Await",
+      "description": "Handling asynchronous operations cleanly and managing error handling with try/catch.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 34,
+      "order": 2
+    },
+    {
+      "id": 13,
+      "courseId": 4,
+      "title": "Working with the Fetch API & REST Endpoints",
+      "description": "Making HTTP requests, parsing JSON, handling status codes and headers.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 28,
+      "order": 3
+    },
+    {
+      "id": 14,
+      "courseId": 5,
+      "title": "Variables, Constants & Data Types in JavaScript",
+      "description": "Primitive types, numbers, strings, booleans, arrays, and objects.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 18,
+      "order": 1
+    },
+    {
+      "id": 15,
+      "courseId": 5,
+      "title": "Control Structures, Loops & Functions",
+      "description": "Conditional branching, while/for loops, and function declarations.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 24,
+      "order": 2
+    },
+    {
+      "id": 16,
+      "courseId": 6,
+      "title": "Semantic HTML5 Structure & Accessibility",
+      "description": "Semantic tags like header, nav, main, article, section, footer, and a11y basics.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 22,
+      "order": 1
+    },
+    {
+      "id": 17,
+      "courseId": 6,
+      "title": "CSS Flexbox & Grid Masterclass",
+      "description": "Modern responsive layouts without float hacks or complex positioning.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 30,
+      "order": 2
+    },
+    {
+      "id": 18,
+      "courseId": 6,
+      "title": "Tailwind CSS Utility-First Styling Workflow",
+      "description": "Responsive prefixes, spacing scale, colors, hover/focus states, and rapid prototyping.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 35,
+      "order": 3
+    },
+    {
+      "id": 19,
+      "courseId": 7,
+      "title": "Java Syntax, Types & OOP Principles",
+      "description": "Classes, encapsulation, inheritance, polymorphism, and interfaces in Java.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 40,
+      "order": 1
+    },
+    {
+      "id": 20,
+      "courseId": 7,
+      "title": "Java Collections Framework & Stream API",
+      "description": "ArrayList, HashMap, HashSet, and functional operations with Java 8+ Streams.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 45,
+      "order": 2
+    },
+    {
+      "id": 21,
+      "courseId": 7,
+      "title": "Exception Handling & File I/O Operations",
+      "description": "Try-with-resources, custom exceptions, and reading/writing files in Java.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 32,
+      "order": 3
+    },
+    {
+      "id": 22,
+      "courseId": 8,
+      "title": "Spring Boot Project Setup & REST Controllers",
+      "description": "Spring Initializr, @RestController, @GetMapping, @PostMapping, and request mapping.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 35,
+      "order": 1
+    },
+    {
+      "id": 23,
+      "courseId": 8,
+      "title": "Spring Data JPA, Entities & PostgreSQL / H2",
+      "description": "Creating entities, Spring Data repositories, query methods, and database migrations.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3qBXWUpoPHo",
+      "duration": 42,
+      "order": 2
+    },
+    {
+      "id": 24,
+      "courseId": 8,
+      "title": "Integrating Angular Frontend with Spring Boot APIs",
+      "description": "CORS configuration, HttpClient integration, error handling, and end-to-end testing.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/k5E2AVpwsko",
+      "duration": 50,
+      "order": 3
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "userId": 2,
+      "courseId": 1,
+      "progress": 75,
+      "enrolledAt": "2026-08-15"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "courseId": 3,
+      "progress": 100,
+      "enrolledAt": "2026-08-18"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "courseId": 6,
+      "progress": 0,
+      "enrolledAt": "2026-08-25"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "courseId": 1,
+      "progress": 25,
+      "enrolledAt": "2026-08-20"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "courseId": 4,
+      "progress": 66,
+      "enrolledAt": "2026-08-22"
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "courseId": 5,
+      "progress": 100,
+      "enrolledAt": "2026-08-10"
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "courseId": 8,
+      "progress": 33,
+      "enrolledAt": "2026-08-24"
+    },
+    {
+      "userId": 1,
+      "courseId": 9,
+      "progress": 0,
+      "enrolledAt": "2026-08-28",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "courseId": 1,
+      "progress": 0,
+      "enrolledAt": "2026-08-28",
+      "id": 9
+    }
+  ]
+}
