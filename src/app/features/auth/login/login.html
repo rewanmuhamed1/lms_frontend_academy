@@ -1,0 +1,85 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+
+        <!-- Logo -->
+        <div class="flex justify-center mb-4">
+            <div
+                class="w-14 h-14 rounded-2xl bg-indigo-500 flex items-center justify-center text-white text-2xl font-bold">
+                E
+            </div>
+        </div>
+
+        <h1 class="text-2xl font-bold text-center text-gray-900">Welcome back to EduLMS</h1>
+
+        <p class="text-center text-gray-500 text-sm mt-2">
+            Sign in to access your enrolled courses and student dashboard
+        </p>
+
+        <!-- Demo Quick Fill -->
+        <div class="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p class="text-xs font-semibold text-gray-500 tracking-wide mb-3">
+                DEMO QUICK FILL:
+            </p>
+
+            <div class="grid grid-cols-2 gap-3">
+                <button
+                    type="button"
+                    class="flex items-center justify-center gap-2 border border-gray-200 rounded-lg py-2 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition">
+                    🎓 Student Demo
+                </button>
+
+                <button
+                    type="button"
+                    class="flex items-center justify-center gap-2 border border-gray-200 rounded-lg py-2 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition">
+                    🛡️ Admin Demo
+                </button>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <form class="mt-6 space-y-5">
+
+            <div>
+                <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                    EMAIL ADDRESS
+                </label>
+
+                <input
+                    type="email"
+                    placeholder="you@example.com"
+                    class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+            </div>
+
+            <div>
+                <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                    PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    placeholder="••••••••"
+                    class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+            </div>
+
+            <button
+                type="button"
+                class="w-full bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition">
+                Sign In
+            </button>
+
+        </form>
+
+        <hr class="my-6 border-gray-100" />
+
+        <p class="text-center text-sm text-gray-500">
+            Don't have an account?
+
+            <a
+                routerLink="/register"
+                class="text-indigo-500 font-semibold hover:underline">
+                Register now
+            </a>
+        </p>
+
+    </div>
+</div>

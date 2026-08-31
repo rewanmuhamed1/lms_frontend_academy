@@ -1,0 +1,166 @@
+<div class="min-h-screen bg-gray-50 px-4 py-10">
+    <div class="max-w-3xl mx-auto">
+
+        <button
+            type="button"
+            class="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 mb-4">
+            ← Back to Manage Courses
+        </button>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+
+            <h1 class="text-2xl font-bold text-gray-900">
+                Add New Course
+            </h1>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Publish a new technical course into the EduLMS curriculum.
+            </p>
+
+            <hr class="my-6 border-gray-100" />
+
+            <form class="space-y-6">
+
+                <!-- Course Title -->
+                <div>
+                    <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                        COURSE TITLE *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="e.g. Master Reactive Angular Architectures"
+                        class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                </div>
+
+                <!-- Instructor / Category -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            INSTRUCTOR NAME *
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. Maximilian Schwarz"
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            CATEGORY *
+                        </label>
+
+                        <select
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400">
+
+                            <option>Angular</option>
+                            <option>React</option>
+                            <option>Vue</option>
+                            <option>Node.js</option>
+                            <option>TypeScript</option>
+                            <option>DevOps</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Price / Difficulty -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            PRICE (EGP) *
+                            <span class="text-gray-400 font-normal">
+                                (0 = FREE)
+                            </span>
+                        </label>
+
+                        <input
+                            type="number"
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            DIFFICULTY LEVEL *
+                        </label>
+
+                        <select
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400">
+
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Duration / Cover Image -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            DURATION (HOURS) *
+                        </label>
+
+                        <input
+                            type="number"
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                            COVER IMAGE URL *
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="https://images.unsplash.com/photo-..."
+                            class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                    </div>
+
+                </div>
+
+                <!-- Description -->
+                <div>
+
+                    <label class="block text-xs font-semibold text-gray-500 tracking-wide mb-1.5">
+                        COURSE DESCRIPTION *
+                    </label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Provide a comprehensive summary of the course syllabus and outcomes..."
+                        class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm resize-y focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent"></textarea>
+
+                </div>
+
+                <hr class="border-gray-100" />
+
+                <!-- Actions -->
+                <div class="flex justify-end gap-3">
+
+                    <button
+                        type="button"
+                        class="px-5 py-2.5 rounded-lg border border-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-50 transition">
+                        Cancel
+                    </button>
+
+                    <button
+                        type="button"
+                        class="px-5 py-2.5 rounded-lg bg-indigo-400 hover:bg-indigo-500 text-white text-sm font-semibold transition">
+                        Create Course
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
