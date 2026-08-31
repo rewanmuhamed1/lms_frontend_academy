@@ -1,0 +1,304 @@
+* { box-sizing: border-box; }
+
+.page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 16px 40px;
+  border-bottom: 1px solid #e7e9f0;
+}
+
+.back-link {
+  color: #1a1a2e;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.course-id {
+  color: #9aa0ac;
+  font-size: 13px;
+}
+
+.hero {
+  background: #0e1526;
+  padding: 40px;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.badge--fill {
+  background: #6d5bf6;
+  color: #fff;
+}
+
+.badge--outline {
+  background: transparent;
+  border: 1px solid #4a5164;
+  color: #cfd3dc;
+}
+
+.badge--teal {
+  border-color: #1f8b7e;
+  color: #4ce0c8;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 640px;
+  margin: 0 0 14px;
+}
+
+.hero-description {
+  color: #a7adba;
+  font-size: 15px;
+  max-width: 620px;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.hero-divider {
+  height: 1px;
+  background: #232b3d;
+  margin-bottom: 20px;
+}
+
+.instructor-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #cfd3dc;
+  font-size: 14px;
+}
+
+.instructor-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #6d5bf6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  padding: 32px 40px;
+  align-items: start;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(20, 20, 40, 0.06);
+}
+
+.card-title {
+  font-size: 17px;
+  margin: 0 0 4px;
+  color: #1a1a2e;
+}
+
+.card-subtitle {
+  color: #9aa0ac;
+  font-size: 13px;
+  margin: 0 0 18px;
+}
+
+.mastery-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.mastery-grid li {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #3a3f4b;
+  line-height: 1.4;
+}
+
+.check {
+  color: #22b07d;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #edeef3;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.lesson-order {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #ece9ff;
+  color: #6d5bf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.lesson-body { flex: 1; }
+
+.lesson-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 2px;
+}
+
+.lesson-description {
+  font-size: 12.5px;
+  color: #9aa0ac;
+  margin: 0;
+}
+
+.lesson-duration {
+  font-size: 12px;
+  border: 1px solid #e2e4ec;
+  border-radius: 6px;
+  padding: 4px 10px;
+  color: #6a6f7b;
+  flex-shrink: 0;
+}
+
+.purchase-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(20, 20, 40, 0.06);
+  position: sticky;
+  top: 20px;
+}
+
+.video-thumb {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 150px;
+  background: linear-gradient(135deg, #cfd6e0, #8b93a3);
+  margin-bottom: 18px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  color: #6d5bf6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.price-label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #9aa0ac;
+  margin: 0 0 4px;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.price-original {
+  font-size: 14px;
+  color: #b0b4bd;
+  text-decoration: line-through;
+}
+
+.price-discount {
+  font-size: 12px;
+  font-weight: 700;
+  color: #22b07d;
+}
+
+.enroll-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6d5bf6, #8b6ff9);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.perks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.perks li {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #3a3f4b;
+}
+
+@media (max-width: 860px) {
+  .content { grid-template-columns: 1fr; }
+  .mastery-grid { grid-template-columns: 1fr; }
+}

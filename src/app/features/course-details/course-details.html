@@ -1,0 +1,80 @@
+<div class="page" *ngIf="course; else notFound">
+  <header class="topbar">
+    <a class="back-link" routerLink="/">← Back to All Courses</a>
+    <span class="course-id">Course ID: #{{ course.id }}</span>
+  </header>
+
+  <section class="hero">
+    <div class="badges">
+      <span class="badge badge--fill">{{ course.category }}</span>
+      <span class="badge badge--outline">{{ course.level }}</span>
+    </div>
+
+    <h1 class="hero-title">{{ course.title }}</h1>
+    <p class="hero-description">{{ course.description }}</p>
+
+    <div class="hero-divider"></div>
+
+    <div class="instructor-row">
+      <span class="instructor-avatar">{{ course.instructor.charAt(0) }}</span>
+      <span class="instructor-name">Created by <strong>{{ course.instructor }}</strong></span>
+      <span class="stat">★ {{ course.rating.toFixed(1) }} ({{ course.studentsCount }} students)</span>
+      <span class="stat">🕐 {{ course.duration }} Total Hours</span>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="content-left">
+      <section class="card">
+        <h2 class="card-title">🎯 What You'll Master</h2>
+        <ul class="mastery-grid">
+          <li *ngFor="let point of masteryPoints">
+            <span class="check">✓</span>{{ point }}
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Course Curriculum</h2>
+        <p class="card-subtitle">{{ lessons.length }} structured lessons • Full video streaming & code exercises</p>
+
+        <div class="lesson" *ngFor="let lesson of lessons">
+          <span class="lesson-order">{{ lesson.order }}</span>
+          <div class="lesson-body">
+            <p class="lesson-title">{{ lesson.title }}</p>
+            <p class="lesson-description">{{ lesson.description }}</p>
+          </div>
+          <span class="lesson-duration">{{ lesson.duration }}</span>
+        </div>
+      </section>
+    </div>
+
+    <aside class="content-right">
+      <div class="purchase-card">
+        <div class="video-thumb">
+          <img [src]="course.image" [alt]="course.title" style="width:100%;height:100%;object-fit:cover" />
+          <button class="play-btn" aria-label="Preview course">▶</button>
+        </div>
+
+        <p class="price-label">PRICE</p>
+        <div class="price-row">
+          <span class="price">{{ course.price }} EGP</span>
+          <span class="price-original">{{ originalPrice }} EGP</span>
+          <span class="price-discount">{{ discountPercent }}% OFF</span>
+        </div>
+
+        <button class="enroll-btn">Enroll Now +</button>
+
+        <ul class="perks">
+          <li *ngFor="let perk of perks"><span class="check">✓</span>{{ perk }}</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<ng-template #notFound>
+  <div class="page">
+    <p style="padding: 40px; text-align: center;">Course not found.</p>
+  </div>
+</ng-template>

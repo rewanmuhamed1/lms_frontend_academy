@@ -1,0 +1,9 @@
+@for( course of courses ; track course.id ){
+<app-course-card [course] = "course" (viewDetails) = " onViewCourseDetails($event)">
+
+</app-course-card>
+}
+
+<app-course-management></app-course-management>
+<app-lesson-management></app-lesson-management>
+<app-student-directory></app-student-directory>
